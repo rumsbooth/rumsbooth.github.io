@@ -8,8 +8,17 @@
       background-color: #004643;
     }
 
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+    }
+
     .name{
       color: #fffffe;
+      display: flex;
+      justify-content: center;
     }
 
     .social-icons a {
@@ -17,15 +26,29 @@
       text-decoration: none;
     }
 
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+
     .restaurants a{
       color: #001e1d;
       text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
     }
 
     .restaurants {
       background-color: #f9bc60;
+      display: flex;
+      align-items:center;
     }
 
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+    
     .banner-image {
       width: 128px;
       height: 128px;
@@ -45,51 +68,53 @@
 </head>
 
 <body>
-  <div class="banner">
-    <img src="/thumbnails/dog_profile_picture.jpg" alt="Ramya Baddam Headshot" class="banner-image">
-  </div>
+  <div class="items">
+    <div class="banner">
+      <img src="/thumbnails/dog_profile_picture.jpg" alt="Ramya Baddam Headshot" class="banner-image">
+    </div>
 
-  <div class="name">
-    Ramya Baddam
-  </div>
+    <div class="name">
+      Ramya Baddam
+    </div>
 
-  <div class="social-icons">
-    <a href="https://github.com/rumsbooth" target="_blank">
-      Github
-    </a>
+    <div class="social-icons">
+      <a href="https://github.com/rumsbooth" target="_blank">
+        Github
+      </a>
+      
+      <a href="https://www.linkedin.com/in/ramyabaddam" target="_blank">
+        LinkedIn
+      </a>
+
+      <a href="https://www.instagram.com/ramyabaddam/" target="_blank">
+        Instagram
+      </a>
+    </div>
     
-    <a href="https://www.linkedin.com/in/ramyabaddam" target="_blank">
-      LinkedIn
-    </a>
+    <div class="restaurants">
+      <img src="/thumbnails/amada.jpg" class="thumbnail">
+      <a href="https://www.amadarestaurant.com/amada-philadelphia" target="_blank">Amada Philadelphia - Spanish Tapas</a>
+    </div>
 
-    <a href="https://www.instagram.com/ramyabaddam/" target="_blank">
-      Instagram
-    </a>
-  </div>
-
-  <div class="restaurants">
-    <img src="/thumbnails/amada.jpg" class="thumbnail">
-    <a href="https://www.amadarestaurant.com/amada-philadelphia" target="_blank">Amada Philadelphia - Spanish Tapas</a>
-  </div>
-
-  <div class="restaurants">
-    <img src="/thumbnails/han_dynasty.jpg" class="thumbnail">
-    <a href="https://www.handynasty.net/" target="_blank">Han Dynasty - Sichuan Cuisine</a>
-  </div>
-  
-  <div class="restaurants">
-    <img src="/thumbnails/hardena.jpg" class="thumbnail">
-    <a href="https://www.hardenaphilly.com/" target="_blank">Hardena - Authentic Indonesian</a>
-  </div>
-  
-  <div class="restaurants">
-    <img src="/thumbnails/masala_kitchen.jpg" class="thumbnail">
-    <a href="https://www.masalakitchenphilly.com/" target="_blank">Masala Kitchen - Indian Kati Rolls</a>
-  </div>
-  
-  <div class="restaurants">
-    <img src="/thumbnails/zahav.jpg" class="thumbnail">
-    <a href="https://www.zahavrestaurant.com/" target="_blank">Zahav - Modern Israeli</a>
+    <div class="restaurants">
+      <img src="/thumbnails/han_dynasty.jpg" class="thumbnail">
+      <a href="https://www.handynasty.net/" target="_blank">Han Dynasty - Sichuan Cuisine</a>
+    </div>
+    
+    <div class="restaurants">
+      <img src="/thumbnails/hardena.jpg" class="thumbnail">
+      <a href="https://www.hardenaphilly.com/" target="_blank">Hardena - Authentic Indonesian</a>
+    </div>
+    
+    <div class="restaurants">
+      <img src="/thumbnails/masala_kitchen.jpg" class="thumbnail">
+      <a href="https://www.masalakitchenphilly.com/" target="_blank">Masala Kitchen - Indian Kati Rolls</a>
+    </div>
+    
+    <div class="restaurants">
+      <img src="/thumbnails/zahav.jpg" class="thumbnail">
+      <a href="https://www.zahavrestaurant.com/" target="_blank">Zahav - Modern Israeli</a>
+    </div>
   </div>
   
 </body>
